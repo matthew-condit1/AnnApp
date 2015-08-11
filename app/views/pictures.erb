@@ -1,8 +1,23 @@
 <!DOCTYPE HTML> 
 <html> 
   <head> 
-      <title>Goodmorning Annie</title>
+      <style>
+      body {
+        background-image: url('http://www.colgate.edu/images/default-source/about_facilities-at-colgate_chapel-house_feedback/a-sunset-over-the-colgate-hill-.jpg?sfvrsn=2');
+        background-size: cover;
+        background-repeat: no-repeat;
+         } 
+      </style>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+
+      <title>Goodmorning Annie</title>
   </head>
+  <div class='images'>
+  <% @pictures.each do |pic|%>
+  <div class='single'>
+  <img src=<%=pic%> height='200' width='auto'>
+  </div>
+  <%end%>
+  </div>
 
 </html>

@@ -2,16 +2,40 @@
 <html> 
   <head> 
       <title>Goodmorning Annie</title>
+      <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+      <style>
+        body {
+          background-image: url(http://www.trustaff.com/Portals/_default/Skins/TruStaff/images/content-images/us_virgin_islands-big.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
   </head>
 
   <body>
     <h1>Hello Ann!</h1>
-    <div class='images' box-shadow='10px 10px 5px #888888;'><img src=<%= @pictureone%> height ='600' width = '600'>
-    <img src=<%= @picturetwo %>  height ='600' width = '600'></div>
-    <h3><a href='dinners.erb'>Dinner ideas for tonight!</a></h3>
-    <h3><a href='pictures.erb'>Our photo album</a></h3>
-    <h3><a href="songs.erb">A new song and some oldies!</a></h3>
+    <HR WIDTH='60%'>
+    <div class='centeredtext'>
+
+    <button class='ghost-button'>
+    <h3><a href='dinners.erb'><div class='buttontxt'>Dinner ideas for tonight!</div></a></h3>
+    </button>
+
+    <br><br>
+
+    <button class='ghost-button'>
+    <h3><a href='pictures.erb'><div class='buttontxt'>Our photo album</div></a></h3>
+    </button>
+
+    <br><br>
+
+    <button class='ghost-button'>
+    <h3><a href="songs.erb"><div class='buttontxt'>A new song and some oldies!</div></a></h3>
+    </button>
+    </div>
 
   </body>
 

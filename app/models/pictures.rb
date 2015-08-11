@@ -4,3 +4,7 @@
 def get_picture(pictures)
   return pictures[rand(pictures.length)]
 end
+
+def get_all(pictures)
+  return pictures
+end
